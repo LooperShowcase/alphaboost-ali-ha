@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>intel</title>
+  </head>
+  <body>
+    <ul>
+      <li><a class="active" href="about website.html">about website</a></li>
+      <li><a href="index.html">home</a></li>
+      <li><a href="products.html">products</a></li>
+      <li><a href="sing up.html">sing up</a></li>
+      <li id="cloar"><input id="clour" onchange="changre()" type="color" /></li>
+      <li id="des">
+        <img
+          id="dos"
+          src="https://preview.redd.it/s9biyhs4lix61.jpg?auto=webp&s=c600a95eff95b3e9406a8b913c6aa3988b5e3a8b"
+          height="60"
+        />
+      </li>
+    </ul>
+    <center>
+      <div>
+        <form>
+          <label>First Name</label><br />
+          <input type="text" />
+          <br />
+          <label>password</label><br />
+          <input type="password" />
+          <br />
+          <label>email</label><br />
+          <input type="email" />
+          <br />
+          <label>gender</label>
+          <br />
+          <label>boy</label>
+          <input type="radio" /><br />
+          <label>girl</label>
+          <input type="radio" /><br /><br />
+          <input id="np" type="file" onchange="npro()" />
+        </form>
+      </div>
+    </center>
+    <script>
+      function changre() {
+        var clour = document.getElementById("clour").value;
+        document.body.style.background = clour;
+      }
+      function npro() {
+        var newpro = document.getElementById("np").files[0].name;
+        document.getElementById("dos").src = newpro;
+      }
+    </script>
+  </body>
+</html>
